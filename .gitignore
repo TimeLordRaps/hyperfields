@@ -1,0 +1,7 @@
+/.lake/
+/site/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.c

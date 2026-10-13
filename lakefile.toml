@@ -1,0 +1,6 @@
+name = "hyperfields"
+version = "0.1.0"
+defaultTargets = ["Hyperfields"]
+
+[[lean_lib]]
+name = "Hyperfields"
