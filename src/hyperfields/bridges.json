@@ -2,8 +2,104 @@
   "schema": "hyperstratum-integration-0.1",
   "classification": "FRAME",
   "bridges": [
-    {"source": "hyperethics", "target": "hyperstructure", "relation": "interpretation", "source_class": "FRAME", "target_class": "FRAME", "status": "OPEN", "mappings": [{"source": "RealityKind.base-reality", "target": "layer.reality", "meaning": "User-facing layer-name alignment only; neither Reality equals Realm nor situated slice equals universal base is inferred."}], "preserves": ["four designated kinds are pairwise distinct", "the kind taxonomy remains open", "areality is not ranked below base-reality"], "excludes": ["a Reality to Realm map", "equating sempiternality with eternity", "deriving composition from kind distinction alone"], "obligations": ["The sempiternality composition is a new user-declared extension, not a theorem of the existing consciousness layer."]},
-    {"source": "hypermechanics", "target": "hyperdynamics", "relation": "application", "source_class": "FRAME", "target_class": "FRAME", "status": "OPEN", "mappings": [{"source": "admissible operation application", "target": "labelled transition", "meaning": "A checked operation can supply one transition; a trajectory also requires explicit state and index semantics."}], "preserves": ["state identity", "declared invariants", "operation preconditions"], "excludes": ["global physical time", "automatic reversibility", "guaranteed reachable states"], "obligations": ["Replay each transition against its mechanism and declared state encoding."]},
-    {"source": "hyperdynamics", "target": "hyperphysics", "relation": "application", "source_class": "FRAME", "target_class": "FRAME", "status": "OPEN", "mappings": [{"source": "local transition index", "target": "physical observation coordinate", "meaning": "Only an explicit dimensional and measurement bridge can give a transition index a physical interpretation."}], "preserves": ["declared trajectory constraints", "open validity obligations"], "excludes": ["seconds inherited from a step number", "physical correctness from graph reachability"], "obligations": ["Supply observables, units, sources and sinks, and refutable applicability bounds."]}
+    {
+      "source": "hyperethics",
+      "target": "hyperstructure",
+      "relation": "interpretation",
+      "source_class": "FRAME",
+      "target_class": "FRAME",
+      "status": "OPEN",
+      "mappings": [
+        {
+          "source": "RealityKind.base-reality",
+          "target": "layer.reality",
+          "meaning": "User-facing layer-name alignment only; neither Reality equals Realm nor situated slice equals universal base is inferred."
+        }
+      ],
+      "preserves": [
+        "four designated kinds are pairwise distinct",
+        "the kind taxonomy remains open",
+        "areality is not ranked below base-reality"
+      ],
+      "excludes": [
+        "a Reality to Realm map",
+        "equating sempiternality with eternity",
+        "deriving composition from kind distinction alone"
+      ],
+      "obligations": [
+        "The sempiternality composition is a new user-declared extension, not a theorem of the existing consciousness layer."
+      ]
+    },
+    {
+      "source": "hypermechanics",
+      "target": "hyperdynamics",
+      "relation": "application",
+      "source_class": "FRAME",
+      "target_class": "FRAME",
+      "status": "OPEN",
+      "mappings": [
+        {
+          "source": "admissible operation application",
+          "target": "labelled transition",
+          "meaning": "A checked operation can supply one transition; a trajectory also requires explicit state and index semantics."
+        },
+        {
+          "source": "independent(left, right)",
+          "target": "commuting labelled transitions",
+          "meaning": "Hypermechanics' disjoint-footprint criterion is a sufficient condition for two enabled rewrites to commute. It is not a claim that every pair of transitions in a Hyperdynamics trajectory commutes, and it says nothing about associativity of a trajectory's composition."
+        },
+        {
+          "source": "rule application order",
+          "target": "trajectory composition order",
+          "meaning": "Reordering two independent rules leaves the configuration unchanged, so the two orders reach the same state. That is commutativity of a pair, not associativity of a sequence: associativity is a property of how three or more steps group, and no Hypermechanics clause states it."
+        }
+      ],
+      "preserves": [
+        "state identity",
+        "declared invariants",
+        "operation preconditions",
+        "the disjoint-footprint criterion as the stated sufficient condition",
+        "state identity across a reordered pair"
+      ],
+      "excludes": [
+        "global physical time",
+        "automatic reversibility",
+        "guaranteed reachable states",
+        "commutativity as a universal law of rule application",
+        "associativity derived from commutativity",
+        "physical simultaneity from a commuting pair"
+      ],
+      "obligations": [
+        "Replay each transition against its mechanism and declared state encoding.",
+        "State the associativity claim separately: commutativity of a pair does not entail associativity of a sequence, and no clause in either field currently asserts the latter.",
+        "Show that the disjoint-footprint criterion is sufficient for the specific transition encoding a Hyperdynamics trajectory uses, rather than for the rewrite relation alone."
+      ]
+    },
+    {
+      "source": "hyperdynamics",
+      "target": "hyperphysics",
+      "relation": "application",
+      "source_class": "FRAME",
+      "target_class": "FRAME",
+      "status": "OPEN",
+      "mappings": [
+        {
+          "source": "local transition index",
+          "target": "physical observation coordinate",
+          "meaning": "Only an explicit dimensional and measurement bridge can give a transition index a physical interpretation."
+        }
+      ],
+      "preserves": [
+        "declared trajectory constraints",
+        "open validity obligations"
+      ],
+      "excludes": [
+        "seconds inherited from a step number",
+        "physical correctness from graph reachability"
+      ],
+      "obligations": [
+        "Supply observables, units, sources and sinks, and refutable applicability bounds."
+      ]
+    }
   ]
 }

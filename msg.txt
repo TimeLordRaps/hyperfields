@@ -1,0 +1,31 @@
+Carry the commutativity/associativity claim on the mechanics-dynamics bridge
+
+The declared architecture names a change/dynamic between admissible operation
+application and labelled transition that has to do with commutativity and
+associativity. That content belongs on the existing hypermechanics ->
+hyperdynamics bridge, not on a new one: a second bridge with the same endpoints
+would be two declarations of one correspondence, and the record's own
+endpoint-distinctness guard refuses it.
+
+What is added is grounded in the two fields' actual code rather than in the
+declaration's wording:
+
+- hypermechanics.independent(left, right) is a disjoint-footprint criterion:
+  it returns true when neither rule writes a place the other writes or reads.
+  That is a *sufficient* condition for two enabled rewrites to commute.
+- hyperdynamics.couple_paths and coupled_product join two supplied paths under
+  an explicit paired-position boundary rule, and both say in their own
+  docstrings that the pairing is a caller-declared schedule rather than a
+  universal clock.
+
+So the bridge now maps the criterion to commuting labelled transitions and maps
+rule application order to trajectory composition order, and it excludes the two
+claims the code does not support: commutativity as a universal law, and
+associativity derived from commutativity. Associativity is a property of how
+three or more steps group; no clause in either field states it, so it is
+recorded as an obligation rather than asserted.
+
+The bridge stays OPEN. Nothing here promotes it.
+
+Gates: lake build 37 jobs; 71 pytest PASS; check_manifest PASS (3 bridges);
+check_candidate_ports PASS; ruff clean.

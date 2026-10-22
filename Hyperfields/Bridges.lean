@@ -208,20 +208,37 @@ def declaredBridges : List Bridge := [
         source := "admissible operation application"
         target := "labelled transition"
         meaning := "A checked operation can supply one transition; a trajectory also requires explicit state and index semantics."
+      },
+      {
+        source := "independent(left, right)"
+        target := "commuting labelled transitions"
+        meaning := "Hypermechanics' disjoint-footprint criterion is a sufficient condition for two enabled rewrites to commute. It is not a claim that every pair of transitions in a Hyperdynamics trajectory commutes, and it says nothing about associativity of a trajectory's composition."
+      },
+      {
+        source := "rule application order"
+        target := "trajectory composition order"
+        meaning := "Reordering two independent rules leaves the configuration unchanged, so the two orders reach the same state. That is commutativity of a pair, not associativity of a sequence: associativity is a property of how three or more steps group, and no Hypermechanics clause states it."
       }
     ]
     preserves := [
       "state identity",
       "declared invariants",
-      "operation preconditions"
+      "operation preconditions",
+      "the disjoint-footprint criterion as the stated sufficient condition",
+      "state identity across a reordered pair"
     ]
     excludes := [
       "global physical time",
       "automatic reversibility",
-      "guaranteed reachable states"
+      "guaranteed reachable states",
+      "commutativity as a universal law of rule application",
+      "associativity derived from commutativity",
+      "physical simultaneity from a commuting pair"
     ]
     obligations := [
-      "Replay each transition against its mechanism and declared state encoding."
+      "Replay each transition against its mechanism and declared state encoding.",
+      "State the associativity claim separately: commutativity of a pair does not entail associativity of a sequence, and no clause in either field currently asserts the latter.",
+      "Show that the disjoint-footprint criterion is sufficient for the specific transition encoding a Hyperdynamics trajectory uses, rather than for the rewrite relation alone."
     ]
   },
   {
