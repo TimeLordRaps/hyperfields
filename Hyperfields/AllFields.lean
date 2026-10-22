@@ -26,6 +26,7 @@ import Hyperfields.Fields.Metamathethicology
 import Hyperfields.Fields.MetaMorphoscriptedOrigination
 import Hyperfields.Fields.GroundedHypercalculi
 import Hyperfields.Fields.GroundedHypersetTheory
+import Hyperfields.Architecture
 
 /-!
 # Every hosted ecosystem section
