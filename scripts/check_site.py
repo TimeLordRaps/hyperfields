@@ -8,7 +8,6 @@ import re
 import subprocess
 from pathlib import Path
 
-
 REQUIRED = (
     "index.html",
     "ecosystem.json",

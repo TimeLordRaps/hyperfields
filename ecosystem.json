@@ -5,408 +5,539 @@
     {
       "slug": "hyperchaos",
       "displayName": "Hyperchaos",
+      "module": "Hyperchaos",
       "role": "hyperfield",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "formative"
       ],
       "summary": "An intentionally unresolved frame for the native structure of chaos.",
-      "module": "Hyperchaos",
       "sourceState": "public-main-pinned",
-      "revision": "cead99a681f46a5cdf6fba752af96fd59b3c70e8",
-      "repository": "https://github.com/TimeLordRaps/hyperchaos"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperchaos",
+      "revision": "cead99a681f46a5cdf6fba752af96fd59b3c70e8"
     },
     {
       "slug": "hyperorder",
       "displayName": "Hyperorder",
+      "module": "Hyperorder",
       "role": "hyperfield",
       "grounding": "field-relative primitive",
+      "groundingKind": "field-primitive",
+      "groundingBases": [],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "A finite partial-order frame with explicit unknown relations.",
-      "module": "Hyperorder",
       "sourceState": "public-main-pinned",
-      "revision": "3b9932ce80546b3c5ad1b4616a08d1b72a0b3a03",
-      "repository": "https://github.com/TimeLordRaps/hyperorder"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperorder",
+      "revision": "3b9932ce80546b3c5ad1b4616a08d1b72a0b3a03"
     },
     {
       "slug": "hyperemergence",
       "displayName": "Hyperemergence",
+      "module": "Hyperemergence",
       "role": "hyperfield",
       "grounding": "grounded in Hyperstratum",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hyperstratum"
+      ],
       "modes": [
         "formative",
         "integrative"
       ],
       "summary": "A candidate cross-level coherence frame whose positive native criterion remains open.",
-      "module": "Hyperemergence",
       "sourceState": "public-main-pinned",
-      "revision": "a19d2927ce80bd82a2b68e66600a237b0f967e76",
-      "repository": "https://github.com/TimeLordRaps/hyperemergence"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperemergence",
+      "revision": "a19d2927ce80bd82a2b68e66600a237b0f967e76"
     },
     {
       "slug": "hyperobjectivity",
       "displayName": "Hyperobjectivity",
+      "module": "Hyperobjectivity",
       "role": "hyperfield",
       "grounding": "grounded in Hyperreality",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hyperreality"
+      ],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "Hyperobjects, hyperform instantiation, and invariance across situated reality presentations.",
-      "module": "Hyperobjectivity",
       "sourceState": "public-main-pinned",
-      "revision": "ed75d14f5ce8b59b1b72983a58a207ea9fc73bfc",
-      "repository": "https://github.com/TimeLordRaps/hyperobjectivity"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperobjectivity",
+      "revision": "ed75d14f5ce8b59b1b72983a58a207ea9fc73bfc"
     },
     {
       "slug": "hypersubjectivity",
       "displayName": "Hypersubjectivity",
+      "module": "Hypersubjectivity",
       "role": "hyperfield",
       "grounding": "grounded in Hyperreality and Hyperobjectivity",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hyperreality",
+        "Hyperobjectivity"
+      ],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "Situated perspective, cross-reality linkage, and candidate novelty from hyperobjects.",
-      "module": "Hypersubjectivity",
       "sourceState": "public-main-pinned",
-      "revision": "1f7f8a75daa569563d1fa607000a655beb21158c",
-      "repository": "https://github.com/TimeLordRaps/hypersubjectivity"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hypersubjectivity",
+      "revision": "1f7f8a75daa569563d1fa607000a655beb21158c"
     },
     {
       "slug": "hyperreality",
       "displayName": "Hyperreality",
+      "module": "Hyperreality",
       "role": "hyperfield",
       "grounding": "field-relative primitive",
+      "groundingKind": "field-primitive",
+      "groundingBases": [],
       "modes": [
         "formative",
         "integrative"
       ],
       "summary": "A taxonomy of what a reality is and which kinds of reality are presented.",
-      "module": "Hyperreality",
       "sourceState": "public-main-pinned",
-      "revision": "9e217aef1c39228bb1042c9ebc10b59cacefafc4",
-      "repository": "https://github.com/TimeLordRaps/hyperreality"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperreality",
+      "revision": "9e217aef1c39228bb1042c9ebc10b59cacefafc4"
     },
     {
       "slug": "hypertime",
       "displayName": "Hypertime",
+      "module": "Hypertime",
       "role": "hyperfield",
       "grounding": "grounded in Hyperreality",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hyperreality"
+      ],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "The axis of branching among reality presentations, where order need not become an outside clock.",
-      "module": "Hypertime",
       "sourceState": "public-main-pinned",
-      "revision": "cb980b5f2377013444e8b41f8ba0577271ba82cf",
-      "repository": "https://github.com/TimeLordRaps/hypertime"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hypertime",
+      "revision": "cb980b5f2377013444e8b41f8ba0577271ba82cf"
     },
     {
       "slug": "hyperspace",
       "displayName": "Hyperspace",
+      "module": "Hyperspace",
       "role": "hyperfield",
       "grounding": "grounded in Hyperreality",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hyperreality"
+      ],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "The axis of placement among observable realities, preserving the source term hyperphere without fixing its geometry here.",
-      "module": "Hyperspace",
       "sourceState": "public-main-pinned",
-      "revision": "bfcf5e7d8d1ea6b30672c32285810178514d61d4",
-      "repository": "https://github.com/TimeLordRaps/hyperspace"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperspace",
+      "revision": "bfcf5e7d8d1ea6b30672c32285810178514d61d4"
     },
     {
       "slug": "hypergeometry",
       "displayName": "Hypergeometry",
+      "module": "Hypergeometry",
       "role": "hyperfield",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "formative"
       ],
       "summary": "A local finite-frame candidate for charts, metrics, and exact path transport.",
-      "module": "Hypergeometry",
-      "sourceState": "local-candidate-unpublished"
+      "sourceState": "local-candidate-unpublished",
+      "reviewState": "source-derived-unreviewed",
+      "repository": null,
+      "revision": null
     },
     {
       "slug": "hypertopology",
       "displayName": "Hypertopology",
+      "module": "Hypertopology",
       "role": "hyperfield",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "formative"
       ],
       "summary": "A local finite-frame candidate for opens, closure, boundary, and continuity.",
-      "module": "Hypertopology",
-      "sourceState": "local-candidate-unpublished"
+      "sourceState": "local-candidate-unpublished",
+      "reviewState": "source-derived-unreviewed",
+      "repository": null,
+      "revision": null
     },
     {
       "slug": "hyperstructure",
       "displayName": "Hyperstructure",
+      "module": "Hyperstructure",
       "role": "hyperfield",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "formative",
         "integrative"
       ],
       "summary": "A local finite-frame candidate for typed structures, components, and presentation isomorphism.",
-      "module": "Hyperstructure",
-      "sourceState": "local-candidate-unpublished"
+      "sourceState": "local-candidate-unpublished",
+      "reviewState": "source-derived-unreviewed",
+      "repository": null,
+      "revision": null
     },
     {
       "slug": "hyperdynamics",
       "displayName": "Hyperdynamics",
+      "module": "Hyperdynamics",
       "role": "hyperfield",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "formative",
         "compositional"
       ],
       "summary": "A local finite-frame candidate for transitions, path lifting, and coupled products.",
-      "module": "Hyperdynamics",
-      "sourceState": "local-candidate-unpublished"
+      "sourceState": "local-candidate-unpublished",
+      "reviewState": "source-derived-unreviewed",
+      "repository": null,
+      "revision": null
     },
     {
       "slug": "hypermechanics",
       "displayName": "Hypermechanics",
+      "module": "Hypermechanics",
       "role": "hyperfield",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "formative",
         "compositional"
       ],
       "summary": "A local finite-frame candidate for guarded rewrites, conservation, and connection rules.",
-      "module": "Hypermechanics",
-      "sourceState": "local-candidate-unpublished"
+      "sourceState": "local-candidate-unpublished",
+      "reviewState": "source-derived-unreviewed",
+      "repository": null,
+      "revision": null
     },
     {
       "slug": "hypergrammar",
       "displayName": "Hypergrammar",
+      "module": "Hypergrammar",
       "role": "hyperfield",
       "grounding": "field-relative primitive",
+      "groundingKind": "field-primitive",
+      "groundingBases": [],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "A source-defined grammatical layer whose current public description is: the solution.",
-      "module": "Hypergrammar",
       "sourceState": "public-main-pinned",
-      "revision": "045435a452d3380b6492c5619da8488865238e80",
-      "repository": "https://github.com/TimeLordRaps/hypergrammar"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hypergrammar",
+      "revision": "045435a452d3380b6492c5619da8488865238e80"
     },
     {
       "slug": "hyperlogic",
       "displayName": "Hyperlogic",
+      "module": "Hyperlogic",
       "role": "hyperfield",
       "grounding": "grounded in Hypermath",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hypermath"
+      ],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "Hypermath's logic counterpart.",
-      "module": "Hyperlogic",
       "sourceState": "public-main-pinned",
-      "revision": "81987c0bf3fe850afcc8ff665ce3caf81e0e3b0b",
-      "repository": "https://github.com/TimeLordRaps/hyperlogic"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperlogic",
+      "revision": "81987c0bf3fe850afcc8ff665ce3caf81e0e3b0b"
     },
     {
       "slug": "hypermath",
       "displayName": "Hypermath",
+      "module": "Hypermath",
       "role": "hyperfield",
       "grounding": "field-relative primitive",
+      "groundingKind": "field-primitive",
+      "groundingBases": [],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "A closed formal universe derived from one primitive operation, with a Lean translation and reproducible open-obligation audit.",
-      "module": "Hypermath",
       "sourceState": "public-main-pinned",
-      "revision": "1db85b32286eeb882e2604c826669bc231029f90",
-      "repository": "https://github.com/TimeLordRaps/hypermath"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hypermath",
+      "revision": "1db85b32286eeb882e2604c826669bc231029f90"
     },
     {
       "slug": "hyperphysics",
       "displayName": "Hyperphysics",
+      "module": "Hyperphysics",
       "role": "hyperfield",
       "grounding": "grounded in Hypermath",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hypermath"
+      ],
       "modes": [
         "formative",
         "compositional"
       ],
       "summary": "Hypermath's physics counterpart.",
-      "module": "Hyperphysics",
       "sourceState": "public-main-pinned",
-      "revision": "66a86b97a587445218bab8f7f7a3abe853797988",
-      "repository": "https://github.com/TimeLordRaps/hyperphysics"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperphysics",
+      "revision": "66a86b97a587445218bab8f7f7a3abe853797988"
     },
     {
       "slug": "hyperethics",
       "displayName": "Hyperethics",
+      "module": "Hyperethics",
       "role": "hyperfield",
       "grounding": "grounded in Hypermath",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hypermath"
+      ],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "Hypermath for morals.",
-      "module": "Hyperethics",
       "sourceState": "public-main-pinned",
-      "revision": "51835e12a0674ab73cd6782d6f05697a47cdd933",
-      "repository": "https://github.com/TimeLordRaps/hyperethics"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperethics",
+      "revision": "51835e12a0674ab73cd6782d6f05697a47cdd933"
     },
     {
       "slug": "hyperchemistry",
       "displayName": "Hyperchemistry",
+      "module": "Hyperchemistry",
       "role": "hyperfield",
       "grounding": "grounded in Hyperphysics",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hyperphysics"
+      ],
       "modes": [
         "formative",
         "compositional"
       ],
       "summary": "The operation of operations within Hyperphysics, beginning with finite, refutable composition.",
-      "module": "Hyperchemistry",
       "sourceState": "public-main-pinned",
-      "revision": "9adb2663ed61b6910fd8ba22a40ec7c133c30821",
-      "repository": "https://github.com/TimeLordRaps/hyperchemistry"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperchemistry",
+      "revision": "9adb2663ed61b6910fd8ba22a40ec7c133c30821"
     },
     {
       "slug": "hyperbiology",
       "displayName": "Hyperbiology",
+      "module": "Hyperbiology",
       "role": "hyperfield",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "formative",
         "compositional"
       ],
       "summary": "The study of the studies of how life interacts; no public main branch was available at inspection time.",
-      "module": "Hyperbiology",
       "sourceState": "public-without-main",
-      "repository": "https://github.com/TimeLordRaps/hyperbiology"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperbiology",
+      "revision": null
     },
     {
       "slug": "hyperprobability",
       "displayName": "Hyperprobability",
+      "module": "Hyperprobability",
       "role": "hyperfield",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "formative",
         "communicative"
       ],
       "summary": "A field candidate for probability, guarantees, and bounded uncertainty.",
-      "module": "Hyperprobability",
       "sourceState": "public-main-pinned",
-      "revision": "c09bfbd9a3dc5e2563cc02c3d52250becfe607f7",
-      "repository": "https://github.com/TimeLordRaps/hyperprobability"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperprobability",
+      "revision": "c09bfbd9a3dc5e2563cc02c3d52250becfe607f7"
     },
     {
       "slug": "hyperstratum",
       "displayName": "Hyperstratum",
+      "module": "Hyperstratum",
       "role": "structural-hub",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "integrative",
         "reflective"
       ],
       "summary": "A recursive ontology of form, frame, field, node, relation, graph, structure, and representation across base, meta, and whole-form levels.",
-      "module": "Hyperstratum",
       "sourceState": "public-main-pinned",
-      "revision": "d9eaf8089c495b5487c7267b67a5827ac6e2d31e",
-      "repository": "https://github.com/TimeLordRaps/hyperstratum"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperstratum",
+      "revision": "d9eaf8089c495b5487c7267b67a5827ac6e2d31e"
     },
     {
       "slug": "hyperorganization",
       "displayName": "Hyperorganization",
+      "module": "Hyperorganization",
       "role": "structural-hub",
       "grounding": "unresolved",
+      "groundingKind": "unresolved",
+      "groundingBases": [],
       "modes": [
         "integrative",
         "reflective"
       ],
       "summary": "A newly public organizational layer whose exact ecosystem role requires owner review.",
-      "module": "Hyperorganization",
       "sourceState": "public-main-pinned",
-      "revision": "8e1a4ea6841703c0573425cd7ceeb35d658fa26f",
-      "repository": "https://github.com/TimeLordRaps/hyperorganization"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/hyperorganization",
+      "revision": "8e1a4ea6841703c0573425cd7ceeb35d658fa26f"
     },
     {
       "slug": "ordinatics",
       "displayName": "Ordinatics",
+      "module": "Ordinatics",
       "role": "ordinal-infrastructure",
       "grounding": "grounded in Hypermath",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hypermath"
+      ],
       "modes": [
         "formative",
         "compositional"
       ],
       "summary": "Ordinal arithmetic and an ordinal-first metalanguage for definable arithmetic truth.",
-      "module": "Ordinatics",
       "sourceState": "public-main-pinned",
-      "revision": "ef2cd7af7c07520d614ee407bc7982110f66295a",
-      "repository": "https://github.com/TimeLordRaps/ordinatics"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/ordinatics",
+      "revision": "ef2cd7af7c07520d614ee407bc7982110f66295a"
     },
     {
       "slug": "metamathethicology",
       "displayName": "Metamathethicology",
+      "module": "Metamathethicology",
       "role": "meta-framework",
       "grounding": "grounded in Hypermath, Hyperlogic, Hyperethics, and Hyperphysics",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hypermath",
+        "Hyperlogic",
+        "Hyperethics",
+        "Hyperphysics"
+      ],
       "modes": [
         "integrative",
         "reflective"
       ],
       "summary": "Metamath, metaphysics, metaethics, and metalogic in one meta-level framework.",
-      "module": "Metamathethicology",
       "sourceState": "public-main-pinned",
-      "revision": "272a3e58a8bc0fbdfc460549d4166c10c6a7feb4",
-      "repository": "https://github.com/TimeLordRaps/metamathethicology"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/metamathethicology",
+      "revision": "272a3e58a8bc0fbdfc460549d4166c10c6a7feb4"
     },
     {
       "slug": "meta-morphoscripted-origination",
       "displayName": "Meta-Morphoscripted-Origination",
+      "module": "MetaMorphoscriptedOrigination",
       "role": "meta-framework",
       "grounding": "grounded in Hypergrammar and Hyperreality",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hypergrammar",
+        "Hyperreality"
+      ],
       "modes": [
         "communicative",
         "reflective"
       ],
       "summary": "A framework for discoverable anchors and morphisms among origination narratives under limited cognition.",
-      "module": "MetaMorphoscriptedOrigination",
       "sourceState": "public-main-pinned",
-      "revision": "b3445b65c6843ee30aaadff6c26cace21357f0dd",
-      "repository": "https://github.com/TimeLordRaps/meta-morphoscripted-origination"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/meta-morphoscripted-origination",
+      "revision": "b3445b65c6843ee30aaadff6c26cace21357f0dd"
     },
     {
       "slug": "grounded-hypercalculi",
       "displayName": "Grounded Hypercalculi",
+      "module": "GroundedHypercalculi",
       "role": "grounded-layer",
       "grounding": "grounded in Hypermath, Ordinatics, and Grounded Hyperset Theory",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hypermath",
+        "Ordinatics",
+        "Grounded Hyperset Theory"
+      ],
       "modes": [
         "compositional",
         "communicative"
       ],
       "summary": "A derived execution and domain-calculus layer spanning language, meta, hyper, ordinal, real-analysis, and oracle calculi.",
-      "module": "GroundedHypercalculi",
       "sourceState": "public-main-pinned",
-      "revision": "6eb5e0af1b7831fec887632d35814b78619cede3",
-      "repository": "https://github.com/TimeLordRaps/grounded-hypercalculi"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/grounded-hypercalculi",
+      "revision": "6eb5e0af1b7831fec887632d35814b78619cede3"
     },
     {
       "slug": "grounded-hyperset-theory",
       "displayName": "Grounded Hyperset Theory",
+      "module": "GroundedHypersetTheory",
       "role": "grounded-layer",
       "grounding": "grounded in Hypermath and Ordinatics",
+      "groundingKind": "grounded",
+      "groundingBases": [
+        "Hypermath",
+        "Ordinatics"
+      ],
       "modes": [
         "formative",
         "compositional"
       ],
       "summary": "A derived reference implementation of non-well-founded set theory using APGs, bisimulation, and constructive membership under AFA.",
-      "module": "GroundedHypersetTheory",
       "sourceState": "public-main-pinned",
-      "revision": "d7cb4372f65a8da2fe0817e6af7e975ce8f866b0",
-      "repository": "https://github.com/TimeLordRaps/grounded-hyperset-theory"
+      "reviewState": "source-derived-unreviewed",
+      "repository": "https://github.com/TimeLordRaps/grounded-hyperset-theory",
+      "revision": "d7cb4372f65a8da2fe0817e6af7e975ce8f866b0"
     }
   ]
 }

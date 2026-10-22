@@ -4,3 +4,9 @@ defaultTargets = ["Hyperfields"]
 
 [[lean_lib]]
 name = "Hyperfields"
+
+[[lean_exe]]
+name = "hyperfields-manifest"
+root = "Hyperfields.Manifest"
+supportInterpreter = true
+

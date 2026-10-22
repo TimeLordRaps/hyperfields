@@ -9,7 +9,6 @@ from html import escape
 from pathlib import Path
 from urllib.parse import quote
 
-
 SITE_URL = "https://timelordraps.github.io/hyperfields/"
 PROJECT_URL = "https://github.com/TimeLordRaps/hyperfields"
 ROLE_ORDER = (
