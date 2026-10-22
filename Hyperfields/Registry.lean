@@ -145,38 +145,38 @@ def hypermechanics : Entry := mkUnpublishedEntry .hypermechanics "hypermechanics
 
 -- L4DEL: title: Hypergrammar
 -- L4DEL: intuition: Hypergrammar is the communicative field for forming and relating expressions across the ecosystem.
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hypergrammar/tree/f2af6c7a07e1257266c43340e05260a0cc534029
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hypergrammar/tree/045435a452d3380b6492c5619da8488865238e80
 def hypergrammar : Entry := mkPublicEntry .hypergrammar "hypergrammar" "Hypergrammar" .hyperfield
   .fieldPrimitive [.formative, .communicative] "A source-defined grammatical layer whose current public description is: the solution."
-  "f2af6c7a07e1257266c43340e05260a0cc534029"
+  "045435a452d3380b6492c5619da8488865238e80"
 
 -- L4DEL: title: Hyperlogic
 -- L4DEL: intuition: Hyperlogic is presented as Hypermath's logic counterpart.
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hyperlogic/tree/992dcfba494817e411eaa04442199955b4e50943
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hyperlogic/tree/81987c0bf3fe850afcc8ff665ce3caf81e0e3b0b
 def hyperlogic : Entry := mkPublicEntry .hyperlogic "hyperlogic" "Hyperlogic" .hyperfield
   (.grounded .hypermath) [.formative, .communicative] "Hypermath's logic counterpart."
-  "992dcfba494817e411eaa04442199955b4e50943"
+  "81987c0bf3fe850afcc8ff665ce3caf81e0e3b0b"
 
 -- L4DEL: title: Hypermath
 -- L4DEL: intuition: Hypermath is the ecosystem's primitive mathematical kernel and Lean-facing bridge.
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hypermath/tree/dc89cbb4f154844ca4909d7c1c359ee3882323e2
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hypermath/tree/1db85b32286eeb882e2604c826669bc231029f90
 def hypermath : Entry := mkPublicEntry .hypermath "hypermath" "Hypermath" .hyperfield
   .fieldPrimitive [.formative, .communicative] "A closed formal universe derived from one primitive operation, with a Lean translation and reproducible open-obligation audit."
-  "dc89cbb4f154844ca4909d7c1c359ee3882323e2"
+  "1db85b32286eeb882e2604c826669bc231029f90"
 
 -- L4DEL: title: Hyperphysics
 -- L4DEL: intuition: Hyperphysics applies the hyperfield programme to physical law while keeping model evidence distinct from physical confirmation.
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hyperphysics/tree/0425654cb78c96c4fb57d5e6455597cc4f73d8a4
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hyperphysics/tree/66a86b97a587445218bab8f7f7a3abe853797988
 def hyperphysics : Entry := mkPublicEntry .hyperphysics "hyperphysics" "Hyperphysics" .hyperfield
   (.grounded .hypermath) [.formative, .compositional] "Hypermath's physics counterpart."
-  "0425654cb78c96c4fb57d5e6455597cc4f73d8a4"
+  "66a86b97a587445218bab8f7f7a3abe853797988"
 
 -- L4DEL: title: Hyperethics
 -- L4DEL: intuition: Hyperethics applies the hyperfield programme to moral and governance structure.
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hyperethics/tree/6b33588bdea7d23eb4f2d9c2732374842e747abd
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hyperethics/tree/51835e12a0674ab73cd6782d6f05697a47cdd933
 def hyperethics : Entry := mkPublicEntry .hyperethics "hyperethics" "Hyperethics" .hyperfield
   (.grounded .hypermath) [.formative, .communicative] "Hypermath for morals."
-  "6b33588bdea7d23eb4f2d9c2732374842e747abd"
+  "51835e12a0674ab73cd6782d6f05697a47cdd933"
 
 -- L4DEL: title: Hyperchemistry
 -- L4DEL: intuition: Hyperchemistry models how operations compose inside Hyperphysics.
@@ -215,24 +215,24 @@ def hyperstratum : Entry := mkPublicEntry .hyperstratum "hyperstratum" "Hyperstr
 
 -- L4DEL: title: Hyperorganization
 -- L4DEL: intuition: Hyperorganization is registered as a structural hub pending an owner-reviewed account of its relation to the fields.
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hyperorganization/tree/0db8b99d18ac5f52ff90ef164695dcf3679cccdf
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/hyperorganization/tree/8e1a4ea6841703c0573425cd7ceeb35d658fa26f
 def hyperorganization : Entry := mkPublicEntry .hyperorganization "hyperorganization" "Hyperorganization" .structuralHub
   .unresolved [.integrative, .reflective] "A newly public organizational layer whose exact ecosystem role requires owner review."
-  "0db8b99d18ac5f52ff90ef164695dcf3679cccdf"
+  "8e1a4ea6841703c0573425cd7ceeb35d658fa26f"
 
 -- L4DEL: title: Ordinatics
 -- L4DEL: intuition: Ordinatics supplies ordinal-first arithmetic and staged semantics rather than being silently relabelled as a hyperfield.
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/ordinatics/tree/0b89505af1023004a733c682b154d9351d1d6042
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/ordinatics/tree/ef2cd7af7c07520d614ee407bc7982110f66295a
 def ordinatics : Entry := mkPublicEntry .ordinatics "ordinatics" "Ordinatics" .ordinalInfrastructure
   (.grounded .hypermath) [.formative, .compositional] "Ordinal arithmetic and an ordinal-first metalanguage for definable arithmetic truth."
-  "0b89505af1023004a733c682b154d9351d1d6042"
+  "ef2cd7af7c07520d614ee407bc7982110f66295a"
 
 -- L4DEL: title: Metamathethicology
 -- L4DEL: intuition: Metamathethicology combines meta-level accounts without transferring authority among them automatically.
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/metamathethicology/tree/7ce47ad777d6b3c867c28f5f640846160ee6931a
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/metamathethicology/tree/272a3e58a8bc0fbdfc460549d4166c10c6a7feb4
 def metamathethicology : Entry := mkPublicEntry .metamathethicology "metamathethicology" "Metamathethicology" .metaFramework
   (.grounded .hypermath [.hyperlogic, .hyperethics, .hyperphysics]) [.integrative, .reflective] "Metamath, metaphysics, metaethics, and metalogic in one meta-level framework."
-  "7ce47ad777d6b3c867c28f5f640846160ee6931a"
+  "272a3e58a8bc0fbdfc460549d4166c10c6a7feb4"
 
 -- L4DEL: title: Meta-Morphoscripted-Origination
 -- L4DEL: intuition: This framework studies how narratives of origination are formed and transformed under limited cognition.
@@ -245,23 +245,23 @@ def metaMorphoscriptedOrigination : Entry := mkPublicEntry .metaMorphoscriptedOr
 
 -- L4DEL: title: Grounded Hypercalculi
 -- L4DEL: intuition: The calculi are grounded because they operate over lower-level Hypermath and adjacent foundational concepts.
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/grounded-hypercalculi/tree/1284bee154d409ed8b90ed4dfb837174b2437e61
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/grounded-hypercalculi/tree/6eb5e0af1b7831fec887632d35814b78619cede3
 def groundedHypercalculi : Entry := mkPublicEntry .groundedHypercalculi "grounded-hypercalculi"
   "Grounded Hypercalculi" .groundedLayer (.grounded .hypermath [.ordinatics, .groundedHypersetTheory])
   [.compositional, .communicative]
   "A derived execution and domain-calculus layer spanning language, meta, hyper, ordinal, real-analysis, and oracle calculi."
-  "1284bee154d409ed8b90ed4dfb837174b2437e61"
+  "6eb5e0af1b7831fec887632d35814b78619cede3"
 
 -- L4DEL: title: Grounded Hyperset Theory
 -- L4DEL: intuition: The hyperset layer is grounded in lower-level mathematical structure while supplying APGs, AFA, and bisimulation machinery.
 -- L4DEL: acronym: APG = accessible pointed graph
 -- L4DEL: acronym: AFA = Anti-Foundation Axiom
--- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/grounded-hyperset-theory/tree/5fb2a8bf9b5cc8a57baacc424c552c1eeeb84c9e
+-- L4DEL: source: Pinned repository = https://github.com/TimeLordRaps/grounded-hyperset-theory/tree/d7cb4372f65a8da2fe0817e6af7e975ce8f866b0
 def groundedHypersetTheory : Entry := mkPublicEntry .groundedHypersetTheory "grounded-hyperset-theory"
   "Grounded Hyperset Theory" .groundedLayer (.grounded .hypermath [.ordinatics])
   [.formative, .compositional]
   "A derived reference implementation of non-well-founded set theory using APGs, bisimulation, and constructive membership under AFA."
-  "5fb2a8bf9b5cc8a57baacc424c552c1eeeb84c9e"
+  "d7cb4372f65a8da2fe0817e6af7e975ce8f866b0"
 
 -- L4DEL: title: The complete initial catalogue
 -- L4DEL: intuition: List order is presentation order only and carries no hidden hierarchy.

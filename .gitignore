@@ -1,5 +1,6 @@
 /.lake/
 /site/
+/.proofsite/
 __pycache__/
 *.pyc
 *.olean

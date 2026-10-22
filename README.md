@@ -4,8 +4,15 @@
 
 **Proofsite:** <https://timelordraps.github.io/hyperfields/>
 
-`hyperfields` is the public, Lean 4–checked explainer and map of the TimeLordRaps
-hyperfield ecosystem.
+`hyperfields` is the public, Lean 4–checked explainer and unified portal for the
+TimeLordRaps hyperfield ecosystem. It hosts one first-class explainer section for
+every registered public repository and every explicitly marked unpublished field
+candidate—not merely one registry page about them.
+
+The portal currently exposes **28 sections**: **23 public repositories** and **5
+unpublished candidates**. Every landing-page card opens a dedicated field page,
+which in turn links to that field's checked Lean entry and exact public source
+coordinate when one exists.
 
 A **hyperfield** is treated here as a field that exposes a formative foundation:
 primitive vocabulary, formation rules, invariants, and open obligations intended to
@@ -53,20 +60,43 @@ Hyperdynamics, and Hypermechanics—currently have no public repository coordina
 are marked `localCandidateUnpublished`. Hyperbiology is public but had no public
 `main` ref when this catalogue was inspected.
 
+## What “hosted together” means
+
+The Pages release is an atlas, following the multi-corpus shape used by
+`lean4-explainer`:
+
+- the landing page exposes every repository or candidate as a visible card;
+- `fields/<slug>/` is the stable hosted explainer page for that field;
+- `Hyperfields/Fields/<Name>.lean.html` is its dedicated Lean-rendered page;
+- `ecosystem.json` is the machine-readable public manifest;
+- public sources are linked at exact commits rather than copied and silently
+  detached from their provenance.
+
+Most ecosystem repositories currently contain prose or executable reference
+implementations rather than Lean source, so they are hosted as source-pinned
+explainer sections rather than misrepresented as Lean corpora. Hypermath is the
+exception: its public repository contains Lean sources. Importing that external
+corpus into this portal is now a question of a versioned dependency rather than
+of a toolchain bridge: the whole ecosystem, this catalogue included, is pinned
+to Lean `v4.35.0`.
+
 ## Read the Lean
 
 - [`Hyperfields/Core.lean`](Hyperfields/Core.lean) defines the ecosystem vocabulary.
 - [`Hyperfields/Registry.lean`](Hyperfields/Registry.lean) contains the source-pinned
   catalogue and its finite consistency theorems.
+- [`Hyperfields/AllFields.lean`](Hyperfields/AllFields.lean) imports every dedicated
+  first-class field module.
+- [`ecosystem.json`](ecosystem.json) is the portal manifest used by the release gate.
 - [`ANNOTATION_POLICY.md`](ANNOTATION_POLICY.md) records how explanations and sources
   are kept distinct.
 
 ## Build
 
-The explainer catalogue is pinned to Lean `v4.34.1`, matching the currently validated
-`lean4-explainer` pipeline. Hypermath and Ordinatics currently use Lean `v4.14.0`, so
-their future theorem imports require an explicit compatibility bridge rather than an
-implicit mixed-toolchain claim.
+The explainer catalogue is pinned to Lean `v4.35.0`, matching the currently validated
+`lean4-explainer` pipeline. Hypermath and Ordinatics are pinned to the same
+version, so their theorem imports need no compatibility bridge: a cross-repo
+`require` is now a versioned dependency like any other.
 
 ```bash
 lake build
@@ -82,8 +112,9 @@ lean4-explainer build --lean-root . --out site
 
 The repository's Pages workflow pins the explainer implementation, checks every L4DEL
 annotation, requires every rendered declaration to be positively kernel-checked with
-no `sorry`, extra axioms, or `UNKNOWN` trust result, and binds source links to the exact
-repository revision being deployed.
+no `sorry`, extra axioms, or `UNKNOWN` trust result, binds source links to the exact
+repository revision being deployed, and fails if any one of the 28 cards, hosted
+pages, checked modules, source pins, or manifest records is absent or inconsistent.
 
 ## Current boundary
 

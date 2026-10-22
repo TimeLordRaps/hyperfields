@@ -29,3 +29,9 @@ the relevant formal evidence supplies them.
 Generated pages must visibly preserve these distinctions. Candidate branches and local
 dirty worktrees require their own pinned manifest before their content may replace a
 public-main explanation.
+
+Every registered ecosystem entry also has a dedicated module under
+`Hyperfields/Fields/`. The portal release gate requires a one-to-one correspondence
+among the registry entry, manifest record, landing-page card, hosted field page, and
+Lean-rendered module page. This prevents a repository from being technically present
+in a hidden aggregate while absent from the public explainer surface.

@@ -62,12 +62,19 @@ jobs:
             --out site \
             --config "$RUNNER_TEMP/lean4-explainer.toml" \
             --cache "$RUNNER_TEMP/site-cache"
+          python scripts/build_portal.py \
+            --site site \
+            --manifest ecosystem.json \
+            --revision "$GITHUB_SHA"
           python scripts/check_site.py --site site --revision "$GITHUB_SHA"
 
-      - name: Configure GitHub Pages
-        if: github.event_name != 'pull_request'
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
-
+  # The portal's central claim is that each public section is pinned to a
+  # revision its public repository actually serves. A pin that names no
+  # reachable commit is a false coordinate, so the release gate checks the
+  # remotes directly. The check needs the network, so it is a separate step
+  # rather than part of the filesystem-only contract above.
+  - name: Check every published source pin against its remote
+    run: python scripts/check_site.py --site site --revision "$GITHUB_SHA" --check-pins
       - name: Upload proofsite
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
