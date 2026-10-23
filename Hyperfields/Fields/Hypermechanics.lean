@@ -56,6 +56,9 @@ structure MechanismState (n : Nat) where
   deriving Repr, DecidableEq
 
 /-- The count in a place, if the place has one. -/
+-- L4DEL: title: Read a place's count
+-- L4DEL: intuition: A place the state does not carry has no count, which is nothing rather than zero.
+-- L4DEL: prereq: Hyperfields.Fields.Hypermechanics.MechanismState
 def MechanismState.amount {n : Nat} (state : MechanismState n)
     (place : Fin n) : Option Int :=
   match state.amounts.find? (fun pair => pair.1 == place) with
@@ -63,6 +66,9 @@ def MechanismState.amount {n : Nat} (state : MechanismState n)
   | none => none
 
 /-- The kind of a place, if the place has one. -/
+-- L4DEL: title: Read a place's kind
+-- L4DEL: intuition: A kind is a name rather than a quantity, so it is read separately from the count.
+-- L4DEL: prereq: Hyperfields.Fields.Hypermechanics.MechanismState
 def MechanismState.kindOfPlace {n : Nat} (state : MechanismState n)
     (place : Fin n) : Option String :=
   match state.kindOf.find? (fun pair => pair.1 == place) with
@@ -114,18 +120,27 @@ structure RewriteRule (n : Nat) where
   deriving Repr, DecidableEq
 
 /-- The weight of a place in a rule's invariant, if it has one. -/
+-- L4DEL: title: Read a place's weight
+-- L4DEL: intuition: A place the invariant does not mention has no weight, and the conservation sum skips it.
+-- L4DEL: prereq: Hyperfields.Fields.Hypermechanics.RewriteRule
 def RewriteRule.weightOf {n : Nat} (rule : RewriteRule n) (place : Fin n) : Option Int :=
   match rule.invariant.find? (fun pair => pair.1 == place) with
   | some pair => some pair.2
   | none => none
 
 /-- The change a rule makes to a place, if it makes one. -/
+-- L4DEL: title: Read a place's change
+-- L4DEL: intuition: A place the rule does not change has no delta, which is nothing rather than a zero change.
+-- L4DEL: prereq: Hyperfields.Fields.Hypermechanics.RewriteRule
 def RewriteRule.changeOf {n : Nat} (rule : RewriteRule n) (place : Fin n) : Option Int :=
   match rule.changes.find? (fun pair => pair.1 == place) with
   | some pair => some pair.2
   | none => none
 
 /-- The weighted sum of a rule's changes. -/
+-- L4DEL: title: The conservation sum
+-- L4DEL: intuition: Multiplying each change by its weight and adding them gives the quantity the rule claims to conserve, and a rule is admissible only when that sum is zero.
+-- L4DEL: prereq: Hyperfields.Fields.Hypermechanics.RewriteRule
 def RewriteRule.weightedChange {n : Nat} (rule : RewriteRule n) : Int :=
   rule.changes.foldl (fun total pair =>
     match rule.weightOf pair.1 with
@@ -158,8 +173,14 @@ def RewriteRule.wellShaped {n : Nat} (rule : RewriteRule n) : Bool :=
 ## Applying a rule
 -/
 
+-- L4DEL: title: Fire a rule
+-- L4DEL: intuition: A rule fires only when every guard holds and no count would go negative, and otherwise it does not fire at all.
+-- L4DEL: prereq: Hyperfields.Fields.Hypermechanics.MechanismState, Hyperfields.Fields.Hypermechanics.RewriteRule
 /--
 Apply a rule to a state.
+-- L4DEL: title: Fire a rule
+-- L4DEL: intuition: A rule fires only when every guard holds and no count would go negative, and otherwise it does not fire at all.
+-- L4DEL: prereq: Hyperfields.Fields.Hypermechanics.MechanismState, Hyperfields.Fields.Hypermechanics.RewriteRule
 
 The rule fires only when every guard is satisfied.  The result is the
 state with the rule's changes applied; a change that would make a count
@@ -186,8 +207,14 @@ def applyRule {n : Nat} (state : MechanismState n) (rule : RewriteRule n) : Opti
   else
     none
 
+-- L4DEL: title: Two rules are independent
+-- L4DEL: intuition: If neither rule writes a place the other writes or reads, the order they fire in cannot matter, which is a sufficient condition for them to commute.
+-- L4DEL: prereq: Hyperfields.Fields.Hypermechanics.RewriteRule
 /--
 Whether two rules have disjoint footprints.
+-- L4DEL: title: Two rules are independent
+-- L4DEL: intuition: If neither rule writes a place the other writes or reads, the order they fire in cannot matter, which is a sufficient condition for them to commute.
+-- L4DEL: prereq: Hyperfields.Fields.Hypermechanics.RewriteRule
 
 Two rules are independent when neither writes a place the other writes or
 reads, and the other does not write a place the first reads.  That is a

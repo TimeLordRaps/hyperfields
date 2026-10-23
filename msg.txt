@@ -1,0 +1,22 @@
+Annotate every declaration, so the published site has no unexplained page
+
+The explainer reported 52 declarations without L4DEL and 228 with it. Every
+declaration now carries a title and an intuition, and the ones with a proof
+shape carry steps and prerequisites: 280 annotated, 0 flagged, 0 without.
+
+What the annotations say is read from each declaration's own docstring and
+from what the code does, not from the field's name. independent is annotated
+as a *sufficient* condition for two rules to commute, because that is what the
+disjoint-footprint test is; containmentAcyclic says the walk is bounded by the
+node count, because that is why n steps catches every cycle; 	riangleInequality
+says it is the axiom that makes a distance a distance, because dropping it
+leaves a symmetric non-negative matrix that is not a metric.
+
+The annotations are a separate layer and change no Lean. The build is unchanged
+at 37 jobs and the declarations are the same 280.
+
+Also adds .sitebuild/ to .gitignore: the local site build is a product, not a
+source.
+
+Gates: lake build 37 jobs; L4DEL 280/280, 0 flagged; 71 pytest PASS;
+check_manifest PASS; check_site PASS; ruff clean.

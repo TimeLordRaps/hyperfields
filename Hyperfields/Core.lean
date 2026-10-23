@@ -216,6 +216,9 @@ because being primitive inside one field's own presentation is a claim about
 that presentation and not a claim about reality.  A grounded entry names its
 primary basis first and then any additional bases.
 -/
+-- L4DEL: title: Render a grounding as text
+-- L4DEL: intuition: A grounding names the fields it rests on, and the rendering joins them the way a sentence would rather than the way a list would.
+-- L4DEL: prereq: Hyperfields.Grounding
 def Grounding.display (grounding : Grounding) : String :=
   match grounding with
   | .fieldPrimitive => "field-relative primitive"

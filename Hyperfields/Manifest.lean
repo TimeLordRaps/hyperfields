@@ -186,6 +186,9 @@ it was generated from.
 record instead. The bridge record is emitted from `Hyperfields.Bridges`, so
 the Python side reads the same declarations Lean checks.
 -/
+-- L4DEL: title: The manifest emitter
+-- L4DEL: intuition: The emitter renders the Lean registry as JSON, so the published record is a build product rather than a second copy of the declarations.
+-- L4DEL: prereq: Hyperfields.Manifest.render
 def main (args : List String) : IO Unit := do
   if args.contains "--bridges" then
     IO.println Hyperfields.Bridges.renderBridges

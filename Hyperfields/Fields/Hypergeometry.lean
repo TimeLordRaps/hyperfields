@@ -83,6 +83,9 @@ def MetricSpace.wellShaped {n : Nat} (space : MetricSpace n) : Bool :=
   symmetric n space.matrix &&
   triangleInequality n space.matrix
 
+-- L4DEL: title: Two points at the same distance
+-- L4DEL: intuition: Two pairs are the same distance when the stored numerators agree, which is a comparison over one shared scale.
+-- L4DEL: prereq: Hyperfields.Exact.Value
 /--
 Whether two distances are the same.
 
@@ -117,6 +120,9 @@ structure ChartTransition (m n : Nat) where
   deriving Repr, DecidableEq
 
 /-- Look up the image of a point in a transition's mapping. -/
+-- L4DEL: title: Read one entry
+-- L4DEL: intuition: A coordinate outside the matrix has no entry, which is nothing rather than a default.
+-- L4DEL: prereq: Hyperfields.Exact.Value
 def lookup {m n : Nat} (mapping : List (Fin m × Fin n)) (point : Fin m) : Option (Fin n) :=
   match mapping.find? (fun pair => pair.1 == point) with
   | some pair => some pair.2

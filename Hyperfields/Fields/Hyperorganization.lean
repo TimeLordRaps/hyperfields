@@ -41,6 +41,8 @@ open Hyperfields.Finite
 ## The phase of a graph of reliance
 -/
 
+-- L4DEL: title: A phase of an organization
+-- L4DEL: intuition: A phase is a stage a rule passes through, and its ordinal position is what the protection and authority measures read.
 /--
 The phase of a node: a natural number, or ω when the node's reliance never
 bottoms out.
@@ -86,12 +88,18 @@ def phases {n : Nat} (edges : List (Fin n × Fin n)) : List (Fin n × Phase) :=
     | none => (node, .omega))
 
 /-- The phase of one node. -/
+-- L4DEL: title: Read a rule's phase
+-- L4DEL: intuition: A rule the table does not place has no phase, which is nothing rather than a default stage.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperorganization.Phase
 def phaseOf {n : Nat} (edges : List (Fin n × Fin n)) (node : Fin n) : Phase :=
   match (phases edges).find? (fun entry => entry.1 == node) with
   | some entry => entry.2
   | none => .omega
 
 /-- Whether a node's phase is finite. -/
+-- L4DEL: title: A phase is finite
+-- L4DEL: intuition: A finite phase has a natural-number position, which is what separates it from a phase that has run past every finite stage.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperorganization.Phase
 def Phase.isFinite : Phase → Bool
   | .finite _ => true
   | .omega => false
@@ -153,6 +161,9 @@ def chainAbove {n : Nat} (rules : List (Rule n)) (start : Fin n) :
   -- The chain ended exactly when the last position had no governor.
   (result.1, result.2.isNone)
 
+-- L4DEL: title: How much a rule is protected
+-- L4DEL: intuition: A rule is protected only as far as the weakest rule beneath it, so the measure is the minimum over its dependencies.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperorganization.Phase
 /--
 The protection of a rule: the price of the cheapest procedure among the
 rules above it.
@@ -178,6 +189,9 @@ def protection {n : Nat} (rules : List (Rule n)) (start : Fin n) : Option Nat :=
   | [] => none
   | first :: rest => some (rest.foldl (fun best price => if price < best then price else best) first)
 
+-- L4DEL: title: How high a rule stands
+-- L4DEL: intuition: Authority height is the ordinal position a rule occupies, and a cycle gives every member the same height because none is above another.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperorganization.Phase
 /--
 The authority height of a rule: the number of governors above it before
 the chain ends.

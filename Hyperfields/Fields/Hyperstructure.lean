@@ -43,13 +43,21 @@ These are the kinds the frame requires.  They are named, not derived: the
 field declares that a presentation must distinguish these four, and it does
 not claim that they are the only kinds there are.
 -/
+-- L4DEL: title: The four designated kinds
+-- L4DEL: intuition: The frame requires a presentation to distinguish these four kinds, and it does not claim they are the only kinds there are.
 def requiredKinds : List String := ["base-reality", "surreality", "preality", "areality"]
 
 /-- Whether every designated kind is declared. -/
+-- L4DEL: title: All four kinds are declared
+-- L4DEL: intuition: A presentation that omits one of the four designated kinds has not distinguished it, so the check requires all four.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperstructure.requiredKinds
 def declaresAllRequiredKinds (declared : List String) : Bool :=
   requiredKinds.all (fun kind => mem kind declared)
 
 /-- Whether the declared kinds are pairwise distinct. -/
+-- L4DEL: title: The kinds are distinct
+-- L4DEL: intuition: Two names for one kind would make the taxonomy say less than it appears to, so the list is checked to have no repeats.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperstructure.requiredKinds
 def kindsAreDistinct (declared : List String) : Bool :=
   declared.eraseDups.length == declared.length
 
@@ -76,6 +84,9 @@ structure SempiternalityView (n : Nat) where
   deriving Repr, DecidableEq
 
 /-- The kind assigned to a member, if any. -/
+-- L4DEL: title: Read a member's kind
+-- L4DEL: intuition: A member the view does not classify has no kind, which is nothing rather than a default.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperstructure.SempiternalityView
 def SempiternalityView.kindOfMember {n : Nat} (view : SempiternalityView n)
     (member : Fin n) : Option String :=
   match view.kindOf.find? (fun pair => pair.1 == member) with
@@ -83,6 +94,9 @@ def SempiternalityView.kindOfMember {n : Nat} (view : SempiternalityView n)
   | none => none
 
 /-- The relations a member stands in, as a list of relation names. -/
+-- L4DEL: title: Which relations a member stands in
+-- L4DEL: intuition: Being an instance of, being contained by, and being a component of are three different relations, so a member can stand in any combination of them.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperstructure.SempiternalityView
 def SempiternalityView.relations {n : Nat} (view : SempiternalityView n)
     (member : Fin n) : List String :=
   let instanceOf := if mem member view.abstractMembers then ["instance_of"] else []
@@ -145,14 +159,25 @@ structure RecursiveStructure (n : Nat) where
   deriving Repr, DecidableEq
 
 /-- Whether every endpoint of a relation is one of the structure's nodes. -/
+-- L4DEL: title: No dangling endpoints
+-- L4DEL: intuition: A relation that names a node the structure does not have is describing something outside the structure, so every endpoint must be a node.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperstructure.RecursiveStructure
 def RecursiveStructure.noDanglingEndpoints {n : Nat}
     (graph : RecursiveStructure n) : Bool :=
   graph.contains.all (fun pair => mem pair.1 graph.nodes && mem pair.2 graph.nodes) &&
   graph.represents.all (fun pair => mem pair.1 graph.nodes && mem pair.2 graph.nodes) &&
   graph.connects.all (fun pair => mem pair.1 graph.nodes && mem pair.2 graph.nodes)
 
+-- L4DEL: title: Containment has no cycle
+-- L4DEL: intuition: A node that can reach itself by following containment is contained in itself, which no well-founded whole allows.
+-- L4DEL: step: From each node, walk containment forward n steps and check the node never reappears.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperstructure.RecursiveStructure
 /--
 Whether the containment relation is acyclic.
+-- L4DEL: title: Containment has no cycle
+-- L4DEL: intuition: A node that can reach itself by following containment is contained in itself, which no well-founded whole allows.
+-- L4DEL: step: From each node, walk containment forward n steps and check the node never reappears.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperstructure.RecursiveStructure
 
 Containment is acyclic when no node is reachable from itself by following
 `contains`.  The check is a bounded reachability scan: from each node, the

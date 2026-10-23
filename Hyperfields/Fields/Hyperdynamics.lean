@@ -47,6 +47,9 @@ structure TransitionSystem (n : Nat) where
   deriving Repr, DecidableEq
 
 /-- The kind declared for a state, if any. -/
+-- L4DEL: title: Read a state's kind
+-- L4DEL: intuition: A state's kind is a name rather than a position, so it is read separately from the transition relation.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperdynamics.TransitionSystem
 def TransitionSystem.kindOfState {n : Nat} (system : TransitionSystem n)
     (state : Fin n) : Option String :=
   match system.kindOf.find? (fun pair => pair.1 == state) with
@@ -74,6 +77,9 @@ def TransitionSystem.wellShaped {n : Nat} (system : TransitionSystem n) : Bool :
 ## Reachability
 -/
 
+-- L4DEL: title: What a system can reach
+-- L4DEL: intuition: A state is reachable when some path of declared steps arrives at it, and the walk is bounded by the number of states.
+-- L4DEL: prereq: Hyperfields.Fields.Hyperdynamics.TransitionSystem
 /--
 The states reachable from a starting state.
 

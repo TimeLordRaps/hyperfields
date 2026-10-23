@@ -150,6 +150,8 @@ def subset {α : Type} [BEq α] (xs ys : List α) : Bool :=
 ## The carrier
 -/
 
+-- L4DEL: title: The carrier of a finite set
+-- L4DEL: intuition: A finite set is a list of distinct elements, and the carrier is that list with its duplicates removed.
 /--
 The full carrier of `n` points.
 

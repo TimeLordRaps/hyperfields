@@ -283,6 +283,9 @@ set_option maxRecDepth 4096 in
 section
 
 /-- Every declared bridge clears the declaration contract. -/
+-- L4DEL: title: Every bridge is well shaped
+-- L4DEL: intuition: A bridge with an empty preserves list would look like a correspondence and carry none of the content that makes it one, so each is checked to have all three lists.
+-- L4DEL: prereq: Hyperfields.Bridges.declaredBridges, Hyperfields.Bridges.Bridge.wellShaped
 theorem declared_bridges_are_well_shaped :
     declaredBridges.filter (fun bridge => !bridge.wellShaped) = [] := by
   decide
